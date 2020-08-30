@@ -3,12 +3,15 @@ import 'package:flutter/material.dart';
 class CustomAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [
-        CustomIconBtn(customIcon: Icons.menu,),
-        CustomIconBtn(customIcon: Icons.search,),
-      ],
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical:20),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          CustomIconBtn(customIcon: Icons.menu,),
+          CustomIconBtn(customIcon: Icons.search,),
+        ],
+      ),
     );
   }
 }
